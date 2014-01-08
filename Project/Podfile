@@ -1,7 +1,6 @@
+ platform :ios
+#platform :osx
+
 pod "snapBlur", :path => "../snapBlur.podspec"
 
-target "Demo" do
-end
 
-target "DemoTests" do
-end

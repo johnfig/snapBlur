@@ -7,9 +7,9 @@
 Pod::Spec.new do |s|
   s.name         = "snapBlur"
   s.version      = "0.1.0"
-  s.summary      = "A short description of snapBlur."
+  s.summary      = "snapBlur blurs background images in a simple format"
   s.description  = <<-DESC
-                    An optional longer description of snapBlur
+                    snapBlur allows you to utilize the source code from the WWDC Conference to blur background images
 
                     * Markdown format.
                     * Don't worry about the indent, we strip it!
