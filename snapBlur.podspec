@@ -1,36 +1,21 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://docs.cocoapods.org/specification.html
-#
 Pod::Spec.new do |s|
   s.name         = "snapBlur"
-  s.version      = "0.1.0"
-  s.summary      = "snapBlur blurs background images in a simple format"
+  s.version      = "0.0.1"
+  s.summary      = "This helps blur background images using Accelerate"
   s.description  = <<-DESC
-                    snapBlur allows you to utilize the source code from the WWDC Conference to blur background images
+                    This is a pod for blurring background images using accelerate
+                    Enjoy a simple interface for blurring images!
 
-                    * Markdown format.
-                    * Don't worry about the indent, we strip it!
+                    This code was re-used from the WWDC Apple Conference and should be credited to them and their running with a snap blurring demo. If you would like to download the original source code feel free to get it from https://developer.apple.com/library/mac/navigation/index.html#section=Resource%20Types&topic=Sample%20Code
                    DESC
-  s.homepage     = "http://EXAMPLE/NAME"
-  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage     = "https://github.com/johnfig/snapBlur"
   s.license      = 'MIT'
   s.author       = { "John Figueiredo" => "john@johnfigueiredo.com" }
-  s.source       = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/johnfig/snapBlur.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
-
   s.source_files = 'Classes'
-  s.resources = 'Assets'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.frameworks = 'Accelerate'
 end

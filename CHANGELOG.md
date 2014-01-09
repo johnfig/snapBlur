@@ -1,4 +1,4 @@
-# snapBlur CHANGELOG
+# boxBlur CHANGELOG
 
 ## 0.1.0
 
